@@ -1,0 +1,105 @@
+/*
+page Contact
+ */
+
+#map{
+    z-index: 1;
+}
+
+
+
+input, textarea{
+    background-color: transparent;
+    border: white 2px solid;
+    color: #D9D9D9;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    border-radius: 10px;
+    font-size: 3vh;
+}
+
+.contactPage{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.leftContact{
+    margin-left: 3vw;
+    color: white;
+    font-family: Poppins, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90vh;
+    width: 50vw;
+}
+
+.rightContact{
+    height: 90vh;
+    width: 50vw;
+    color: white;
+    font-family: Poppins, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.boutonSend{
+    margin-top: 2vh;
+    background-color: white;
+    height: 10vh;
+    width: 25vh;
+    color: #313131;
+    border: none;
+    border-radius: 50px;
+    font-size: 3vh;
+}
+
+.backgroundMaps{
+    height: 70vh;
+    width: 40vw;
+}
+
+#map{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #313131;
+    height: 40vh;
+    width: 40vw;
+    border-radius: 40px;
+}
+
+.bottom{
+    background-image: url("../../TisBarbier/img/carteBaptiste.png");
+    background-color: #252525;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    height: 30vh;
+    width: 40vw;
+    border: none;
+}
+
+
+@media (max-width: 1000px) {
+
+    .contactPage{
+        flex-direction: column-reverse;
+    }
+
+    input,textarea {
+        font-size: 1.5vh;
+    }
+
+    #map{
+        width: 83vw;
+    }
+
+    .bottom{
+        width: 80vw;
+    }
+
+}

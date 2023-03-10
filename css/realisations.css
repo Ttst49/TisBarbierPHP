@@ -1,0 +1,51 @@
+html {
+    overflow-x:scroll;
+}
+
+
+.pics{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Poppins, sans-serif;
+    font-size: 3rem;
+    color: white;
+    overflow: scroll;
+    scroll-behavior: smooth;
+}
+
+.pic{
+    height: 25vh;
+    width: 25vh;
+}
+
+.systemProfessional{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 50vh;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+hr{
+    width: 60vw;
+    opacity: 1;
+    color: white;
+}
+
+.systemLogo{
+    background-image: url("../../TisBarbier/img/syspro.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20vh;
+    width: 20vh;
+    border-radius: 30px;
+}
+
+.presentationLine{
+    width: 30vh;
+}
