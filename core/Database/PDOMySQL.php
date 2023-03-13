@@ -6,7 +6,7 @@ class PDOMySQL
 {
 
     /**
-     * Database manager in order to define the connection to database for the rest of the framwork
+     * Database manager in order to define the connection to database for the rest of the framework
      * Returning a unique variable already connected to the database
      * Shortcut to database
      */
@@ -14,10 +14,12 @@ class PDOMySQL
     public static function getPdo():\PDO
     {
 
-        $adresseServeurMySQL = "";
-        $nomDeDatabase = "";
-        $username = "";
-        $password = "";
+        $adresseServeurMySQL = "localhost";
+        $nomDeDatabase = "barber";
+        $username = "adminTorres";
+        $password = "!VFVutfCR98SCWI7";
+
+
 
         $pdo = new \PDO("mysql:host=$adresseServeurMySQL;dbname=$nomDeDatabase",
             $username,

@@ -44,6 +44,10 @@ class BarberController extends AbstractController
         return $this->render("barber/mentionsLégales",["pageTitle"=>"Mention Légales"]);
     }
 
+    public function connect(){
+        return $this->render("barber/connect",["pageTitle"=>"Connexion Admin"]);
+    }
+
     /**
      *
      * création d'une méthode mail?
