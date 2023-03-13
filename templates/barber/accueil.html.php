@@ -44,13 +44,17 @@
   <div><h3 class="titleContact title">Nous contacter</h3></div>
   <div class="backgroundContact">
     <div><h4 class="textContact">Enchanté, quel est votre nom?</h4></div>
-    <div><h5  class="form">
+    <div>
+        <form action="index.php?type=barber&action=contact" method="post">
+        <h5  class="form">
       <label for="nom"></label>
-      <input type="text" name="nom" id="nom" class="nom" placeholder="Nom">
+      <input type="text" name="nom" id="nom" class="nom" placeholder="Nom" required>
       <label for="mail"></label>
-      <input type="email" name="mail" id="mail" class="mail" placeholder="Mail">
-      </h5></div>
-    <div class="boutonContact"><h5>Continuer</h5></div>
+      <input type="email" name="mail" id="mail" class="mail" placeholder="Mail" required>
+      </h5>
+        <h5 class="centered"><button class="boutonContact">Continuer</button></h5>
+        </form>
+    </div>
   </div>
 </div>
 

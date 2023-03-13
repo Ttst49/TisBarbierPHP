@@ -594,7 +594,9 @@ input{
 
     .boutonContact{
         width: 60vw;
+        border: none;
     }
+
 
     .call,.horaires{
         height: 25vh;
@@ -646,3 +648,8 @@ input{
 }
 
 
+.centered{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

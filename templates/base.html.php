@@ -71,7 +71,8 @@
     </div>
     <div class="rightFooter">
         <div class="socials">
-            <h5>Suivez-nous sur nos réseaux <br> <img class="instagram" src="img/instagram.svg" alt="Instagram Logo"> <img class="facebook" src="img/facebook.svg" alt="facebook logo"></h5>
+            <h5>Suivez-nous sur nos réseaux <br> <a href="https://instagram.com/tisbarbier"><img class="instagram" src="img/instagram.svg" alt="Instagram Logo"></a>
+                <a href="https://www.facebook.com/people/TisBarbier/100084037249214/"><img class="facebook" src="img/facebook.svg" alt="facebook logo"></a></h5>
         </div>
     </div>
 </footer>

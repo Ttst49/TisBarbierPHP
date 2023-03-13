@@ -64,7 +64,7 @@
         </div>
         <div class="boutonInterest">
             <h3 class="titleInterested"><span>Intéressé?</span></h3>
-            <button class="interest" type="button">Nous contacter</button>
+            <a href="index.php?type=barber&action=contact"><button class="interest" type="button">Nous contacter</button></a>
         </div>
     </div>
 </div>

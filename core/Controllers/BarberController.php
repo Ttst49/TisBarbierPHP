@@ -26,10 +26,26 @@ class BarberController extends AbstractController
     }
 
     public function contact(){
-        return $this->render("barber/contact",["pageTitle"=>"Contact","css"=>"contact"]);
+
+        $nom = null;
+        $mail = null;
+
+
+        if (!empty($_POST["nom"])&& !empty($_POST["mail"])){
+            $nom = $_POST["nom"];
+            $mail = $_POST["mail"];
+        }
+
+
+        return $this->render("barber/contact",["pageTitle"=>"Contact","css"=>"contact","nom"=>$nom,"mail"=>$mail]);
     }
 
     public function mentions(){
         return $this->render("barber/mentionsLégales",["pageTitle"=>"Mention Légales"]);
     }
+
+    /**
+     *
+     * création d'une méthode mail?
+     * */
 }
