@@ -28,9 +28,9 @@ class User extends Security
         return $this->username;
     }
 
-    public function setUsername(string $username)
+    public function setUsername(string $username): void
     {
-        return $this->$username;
+        $this->username = $username;
     }
 
     public function getPassword()
@@ -38,7 +38,7 @@ class User extends Security
         return $this->password;
     }
 
-    public function setPassword(string $password)
+    public function setPassword(string $password): void
     {
         $this->password = $this->encryptPassword($password);
     }

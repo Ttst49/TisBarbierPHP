@@ -13,6 +13,7 @@ class UserController extends AbstractController
 
 
     public function register(){
+
         $username= null;
         $password= null;
 
@@ -38,7 +39,7 @@ class UserController extends AbstractController
         }
 
 
-        return $this->render("barber/accueil",["pageTitle"=>"Accueil"]);
+        return $this->render("user/register",["pageTitle"=>"création administrateur"]);
 
     }
 
