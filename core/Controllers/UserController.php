@@ -11,6 +11,37 @@ use Entity\User;
 class UserController extends AbstractController
 {
 
+
+    public function register(){
+        $username= null;
+        $password= null;
+
+        if (!empty($_POST["username"])){
+            $username= htmlspecialchars($_POST["username"]);
+        }
+
+        if (!empty($_POST["password"])){
+            $password= htmlspecialchars($_POST["password"]);
+        }
+
+        if ($username && $password){
+            $user = new User();
+            $user->setUsername($username);
+            $user->setPassword($password);
+
+            $this->repository->insert($user);
+
+            return $this->redirect([
+                "type"=>"admin",
+                "action"=>"accueil"
+            ]);
+        }
+
+
+        return $this->render("barber/accueil",["pageTitle"=>"Accueil"]);
+
+    }
+
     public function signIn(){
 
         $username =  null;

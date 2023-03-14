@@ -2,15 +2,13 @@
 
 namespace App;
 
-class AdminKernel
+class UserKernel
 {
-    /**
-     * Main class, It runs at the opening of the website and define the landing page
-     */
+
     public static function run(){
 
-        $type = "admin";
-        $action = "index";
+        $type = "user";
+        $action = "register";
 
 
 
@@ -24,8 +22,6 @@ class AdminKernel
         $controller = new $controllerName();
 
         $controller->$action();
-
-
 
 
     }

@@ -3,11 +3,8 @@
 namespace Controllers;
 
 use Attributes\UsesEntity;
-/**
-use Swift_Mailer;
-use Swift_Message;
-use Swift_SmtpTransport;
-**/
+
+
 
 #[UsesEntity(value: false)]
 class BarberController extends AbstractController
@@ -39,43 +36,23 @@ class BarberController extends AbstractController
         $message = null;
 
 
-        if (!empty($_POST["nom"]) && !empty($_POST["mail"])){
-
-            return $this->render("barber/contact",["pageTitle"=>"Contact","css"=>"contact","nom"=>$nom,"mail"=>$mail]);
-        }
-
-
-        if (!empty($_POST["nom"])){
+        if (!empty($_POST["nom"])&& !empty($_POST["mail"])){
             $nom = $_POST["nom"];
-
-        }
-
-        if (!empty($_POST["mail"])){
             $mail = $_POST["mail"];
-        }
-
-        if (!empty($_POST["message"])){
-            $message = $_POST["message"];
         }
 
         if (!empty($_POST["nom"]) && (!empty($_POST["mail"])) && (!empty($_POST["message"]))){
 
-            $transport = (new Swift_SmtpTransport("smtp.example.org",25))
-                ->setUsername("heu")
-                ->setPassword("jsp");
 
-            $mailer = new Swift_Mailer($transport);
 
-            $message = (new Swift_Message("Prise contact TisBarbier"))
-                ->setFrom([$mail=>$nom])
-                ->setTo(["thibautstachnick@gmail.com"=>"thithi stach"])
-                ->setBody($message);
+            file_get_contents("https://formsubmit.co/thibautstachnick@gmail.com");
 
-            $result = $mailer->send($message);
 
+            return $this->render("barber/accueil",["pageTitle"=>"coucou c'est moi"]);
         }
 
 
+        return $this->render("barber/contact",["pageTitle"=>"Contact","css"=>"contact","nom"=>$nom,"mail"=>$mail]);
     }
 
 

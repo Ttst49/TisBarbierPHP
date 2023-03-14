@@ -14,7 +14,6 @@
 
 
 </head>
-<body>
 
 <div class="banner">
     <p class="content">
@@ -53,6 +52,7 @@
 </div>
 
 <?= $pageContent ?>
+
 
 
 <footer class="footer">
