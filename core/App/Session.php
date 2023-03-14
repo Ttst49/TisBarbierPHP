@@ -2,6 +2,8 @@
 
 namespace App;
 
+use Repositories\UserRepository;
+
 class Session
 {
     public static function start(){
@@ -34,7 +36,7 @@ class Session
     }
 
     public static function getUser(){
-        $user = \App\Session::get('user');
+        $user = Session::get('user');
         if(isset($user['id'])){
 
             $userRepo = new UserRepository();
@@ -43,4 +45,5 @@ class Session
         }else return false;
 
     }
+
 }

@@ -1,9 +1,43 @@
+<div class="burgerMenu">
+    <div id="mySidenav" class="sidenav">
+        <a id="closeBtn" href="#" class="close">×</a>
+        <ul>
+            <li><a class="linkModified" href="#"><span class="gris">Accueil</span></a></li>
+            <li><a class="linkModified" href="realisations.html"><span>Réalisations</span></a></li>
+            <li><a class="linkModified" href="prestations.html"><span>Prestations</span></a></li>
+            <li><a class="linkModified" href="contact.html"><span>Contact</span></a></li>
+        </ul>
+    </div>
+
+    <a href="#" id="openBtn">
+  <span class="burger-icon">
+    <span class="backgroundMenu">
+      <img class="menu" src="img/menu.svg" alt="menu burger">
+    </span>
+  </span>
+    </a>
+</div>
+
+<div class="navbar">
+    <a href="index.php"><div class="logo"></div></a>
+    <div class="links">
+        <a class="link" href="index.php?type=barber&action=realisation">Réalisations</a>
+        <a class="link" href="index.php?type=barber&action=prestation">Prestations</a>
+        <a class="link" href="index.php?type=barber&action=contact">Contact</a>
+    </div>
+    <a class="logoInvisible" href="index.php"><div class="logo"></div></a>
+</div>
+
+<?php use App\Session;
+
+if ( Session::getUser()){ ?>
+
 <div class="main">
     <div class="container"><h1 class="welcomeText title">Bienvenue chez TisBarbier</h1></div>
 </div>
 
 <div class="slogan">
-    <div class="container"><h2 class="textSlogan">Découvrez un salon de qualité pour des personnes de qualité!</h2></div>
+    <div class="container"><h2 class="textSlogan"><a href="index.php?type=user&action=signOut">Se déconnecter</a></h2></div>
 </div>
 
 <div class="presentation">
@@ -62,3 +96,8 @@
 <div class="infos container">
     <img class="carte" src="/../TisBarbier/img/carteBaptiste.png" alt="Presentation Card">
 </div>
+
+
+<?php }else{ ?>
+    <p class="link">Erreur</p>
+<?php } ?>

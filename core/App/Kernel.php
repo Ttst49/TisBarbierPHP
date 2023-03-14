@@ -9,6 +9,8 @@ class Kernel
      */
     public static function run(){
 
+        Session::start();
+
         $type = "barber";
         $action = "index";
 

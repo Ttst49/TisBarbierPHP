@@ -1,4 +1,7 @@
 <?php
+
+use App\Session;
+
 require_once ('core/App/autoloading.php');
 
 /**

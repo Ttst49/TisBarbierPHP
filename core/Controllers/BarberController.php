@@ -3,7 +3,7 @@
 namespace Controllers;
 
 use Attributes\UsesEntity;
-
+use const http\Client\Curl\POSTREDIR_301;
 
 
 #[UsesEntity(value: false)]
@@ -41,14 +41,47 @@ class BarberController extends AbstractController
             $mail = $_POST["mail"];
         }
 
-        if (!empty($_POST["nom"]) && (!empty($_POST["mail"])) && (!empty($_POST["message"]))){
+        if (!empty($_POST["message"])){
+            $message = $_POST["message"];
+        }
+
+        if ($nom && $mail && $message){
 
 
+            /**
+            $targetURL= "https://formsubmit.co/thibautstachnick@gmail.com";
+            $content= array("nom"=>$nom,"mail"=>$mail,"message"=>$message);
 
-            file_get_contents("https://formsubmit.co/thibautstachnick@gmail.com");
+            $ch = curl_init();
+            curl_setopt($ch,CURLOPT_URL,$targetURL);
+            curl_setopt($ch,CURLOPT_POST,1);
+            curl_setopt($ch,CURLOPT_POSTFIELDS,$content);
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER,1);
+            curl_setopt($ch, CURLOPT_VERBOSE,true);
+            $result = curl_exec ($ch);
+
+            $response = json_decode($result, true);
+
+            var_dump($response);
+             **/
 
 
-            return $this->render("barber/accueil",["pageTitle"=>"coucou c'est moi"]);
+            $url = 'https://formsubmit.co/thibautstachnick@gmail.com';
+            $data = array('nom' => $nom, 'mail' => $mail, "message"=>$message);
+
+            $options = array(
+                'http' => array(
+                    'header'  => "Content-type: application/x-www-form-urlencoded\r\n",
+                    'method'  => 'POST',
+                    'content' => http_build_query($data)
+                )
+            );
+            $context  = stream_context_create($options);
+            $result = file_get_contents($url, false, $context);
+
+            var_dump($result);
+
+
         }
 
 

@@ -1,3 +1,34 @@
+<div class="burgerMenu">
+    <div id="mySidenav" class="sidenav">
+        <a id="closeBtn" href="#" class="close">×</a>
+        <ul>
+            <li><a class="linkModified" href="index.php"><span>Accueil</span></a></li>
+            <li><a class="linkModified" href="index.php?type=barber&action=realisation"><span>Réalisations</span></a></li>
+            <li><a class="linkModified" href="#"><span class="gris">Prestations</span></a></li>
+            <li><a class="linkModified" href="index.php?type=barber&action=contact"><span>Contact</span></a></li>
+        </ul>
+    </div>
+
+    <a href="#" id="openBtn">
+  <span class="burger-icon">
+    <span class="backgroundMenu">
+      <img class="menu" src="img/menu.svg" alt="menu burger">
+    </span>
+  </span>
+    </a>
+</div>
+
+<div class="navbar">
+    <a href="$index.php"><div class="logo"></div></a>
+    <div class="links">
+        <a class="link" href="index.php?type=barber&action=realisation">Réalisations</a>
+        <a class="link gris" href="#">Prestations</a>
+        <a class="link " href="index.php?type=barber&action=contact">Contact</a>
+    </div>
+    <a class="logoInvisible" href="index.php"><div class="logo"></div></a>
+
+</div>
+
 <div class="prestationsCards">
     <div class="cartePrestation">
         <div class="title">Barbe <img class="icon" src="img/beard.png" alt="logo barbe"></div>

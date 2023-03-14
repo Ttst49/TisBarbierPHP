@@ -9,6 +9,9 @@ class AdminKernel
      */
     public static function run(){
 
+        Session::start();
+
+
         $type = "admin";
         $action = "index";
 

@@ -21,35 +21,6 @@
     </p>
 </div>
 
-<div class="burgerMenu">
-    <div id="mySidenav" class="sidenav">
-        <a id="closeBtn" href="#" class="close">×</a>
-        <ul>
-            <li><a class="linkModified" href="#"><span class="gris">Accueil</span></a></li>
-            <li><a class="linkModified" href="realisations.html"><span>Réalisations</span></a></li>
-            <li><a class="linkModified" href="prestations.html"><span>Prestations</span></a></li>
-            <li><a class="linkModified" href="contact.html"><span>Contact</span></a></li>
-        </ul>
-    </div>
-
-    <a href="#" id="openBtn">
-  <span class="burger-icon">
-    <span class="backgroundMenu">
-      <img class="menu" src="img/menu.svg" alt="menu burger">
-    </span>
-  </span>
-    </a>
-</div>
-
-<div class="navbar">
-    <a href="index.php"><div class="logo"></div></a>
-    <div class="links">
-        <a class="link" href="index.php?type=barber&action=realisation">Réalisations</a>
-        <a class="link" href="index.php?type=barber&action=prestation">Prestations</a>
-        <a class="link" href="index.php?type=barber&action=contact">Contact</a>
-    </div>
-    <a class="logoInvisible" href="index.php"><div class="logo"></div></a>
-</div>
 
 <?= $pageContent ?>
 
@@ -71,8 +42,8 @@
     </div>
     <div class="rightFooter">
         <div class="socials">
-            <h5>Suivez-nous sur nos réseaux <br> <a href="https://instagram.com/tisbarbier"><img class="instagram" src="img/instagram.svg" alt="Instagram Logo"></a>
-                <a href="https://www.facebook.com/people/TisBarbier/100084037249214/"><img class="facebook" src="img/facebook.svg" alt="facebook logo"></a></h5>
+            <h5>Suivez-nous sur nos réseaux <br> <a target="_blank" href="https://instagram.com/tisbarbier"><img class="instagram" src="img/instagram.svg" alt="Instagram Logo"></a>
+                <a target="_blank" href="https://www.facebook.com/people/TisBarbier/100084037249214/"><img class="facebook" src="img/facebook.svg" alt="facebook logo"></a></h5>
         </div>
     </div>
 </footer>

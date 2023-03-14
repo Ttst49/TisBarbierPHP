@@ -101,7 +101,7 @@ class UserController extends AbstractController
         }
         return $this->redirect([
             "type"=>"barber",
-            "action"=>"accueil"
+            "action"=>"index"
         ]);
     }
 

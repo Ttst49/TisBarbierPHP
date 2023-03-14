@@ -7,6 +7,9 @@ class UserKernel
 
     public static function run(){
 
+        Session::start();
+
+
         $type = "user";
         $action = "register";
 
