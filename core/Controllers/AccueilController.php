@@ -23,57 +23,50 @@ class AccueilController extends AbstractController
 
     public function update(){
 
-        $id=null;
-        $image= null;
 
-        if (!empty($_GET["id"]) && ctype_digit($_GET["id"])){
-            $id= $_GET["id"];
+        $request = $this->get("form",["id"=>"number"]);
+
+        if ($request){
+            return $this->render("accueil/update",["accueil"=>$this->repository->findById($_GET["id"]),"pageTitle"=>"update page"]);
         }
 
-        if ($id){
+
+        $request = $this->post("form",["idUpdate"=>"number"]);
 
 
-            $accueil = $this->repository->findById($id);
+        if ($request){
+
+            $accueil = $this->repository->findById($request["idUpdate"]);
 
             if (!$accueil){
-                return $this->redirect();
-            }
-
-            if (!empty($_GET["imageUpdate"])){
-                $image = $_GET["imageUpdate"];
+                return $this->render("accueil/index",["pageTitle"=>"accueil Admin"]);
             }
 
 
-            }
-            if (!empty($_POST["idUpdate"])){
-                $id = $_POST["idUpdate"];
-            }
+            if ($request["idUpdate"]){
 
-            if ($id && $image){
-
-                echo $id;
-                echo $image;
 
                 $image = new File("image");
+                var_dump($image);
                 if ($image->isImage()){
                     $image->upload();
+                    $accueil->setImage($image->getName());
+                }else{
+                    return $this->render("accueil/update",["accueil"=>$accueil,"pageTitle"=>"update page"]);
                 }
 
-
-                $accueil = $this->repository->findById($id);
-
-                $accueil->setImage($image->getName());
 
                 $this->repository->update($accueil);
 
                 return $this->redirect([
-                    "type"=>"admin",
-                    "action"=>"accueil"
+                    "type"=>"accueil",
+                    "action"=>"index"
                 ]);
 
+            }
         }
-        return $this->render("accueil/update",["accueil"=>$accueil,"pageTitle"=>"update Page"]);
 
+        return $this->redirect(["type=accueil", "action"=>"accueil"]);
     }
 
 }
