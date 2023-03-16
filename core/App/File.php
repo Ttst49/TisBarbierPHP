@@ -44,11 +44,17 @@ class File
         $this->tempFile = $this->fileData["tmp_name"];
     }
 
-    public function upload(){
+    public function upload( $previousFileName ){
 
+            $data = $previousFileName;
+            $dirhandle = opendir("image");
+            $dir= "image";
+
+            if ($previousFileName){
+                unlink($dir."/".$previousFileName);
+            }
 
             move_uploaded_file($this->tempFile, $this->target);
-
 
     }
 

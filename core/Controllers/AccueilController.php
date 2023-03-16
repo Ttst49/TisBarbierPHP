@@ -31,7 +31,7 @@ class AccueilController extends AbstractController
         }
 
 
-        $request = $this->post("form",["idUpdate"=>"number"]);
+        $request = $this->post("form",["idUpdate"=>"number","ancienneImage"=>"text"]);
 
 
         if ($request){
@@ -47,9 +47,8 @@ class AccueilController extends AbstractController
 
 
                 $image = new File("image");
-                var_dump($image);
                 if ($image->isImage()){
-                    $image->upload();
+                    $image->upload($request["ancienneImage"]);
                     $accueil->setImage($image->getName());
                 }else{
                     return $this->render("accueil/update",["accueil"=>$accueil,"pageTitle"=>"update page"]);

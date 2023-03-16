@@ -10,6 +10,7 @@
         <label for="image">nouvelle image</label>
         <input type="file" name="image" id="image">
         <input type="hidden" name="idUpdate" id="idUpdate" value="<?= $accueil->getId() ?>">
+        <input type="hidden" name="ancienneImage" value="<?= $accueil->getImage() ?>">
         <button class="btn-warning btn" type="submit">Update</button>
     </form>
 
