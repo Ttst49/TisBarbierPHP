@@ -16,7 +16,7 @@ body{
 }
 
 .logo{
-    background-image: url("../../TisBarbier/img/logo.png");
+    background-image: url("../image/logo.png");
     height: 10vh;
     width: 10vh;
     background-size: cover;
@@ -43,7 +43,7 @@ body{
     background-color: #313131;
     position: sticky;
     top: 0;
-    border-image: url("../../TisBarbier/img/patternBanner.png") 20;
+    border-image: url("../image/patternBanner.png") 20;
     border-style: solid;
     border-width: 5px;
 }
@@ -78,7 +78,6 @@ body{
 page Accueil
  */
 .main{
-    background-image: url("../../TisBarbier/img/borber.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -370,6 +369,15 @@ input{
 
 }
 
+.carte{
+    background-image: url("../image/carteBaptiste.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 40vh;
+    width: 75vw;
+}
+
 
 
 /*
@@ -435,7 +443,7 @@ input{
 }
 
 .logoFooter{
-    background-image: url("../../TisBarbier/img/logo.png");
+    background-image: url("../image/logo.png");
     height: 150px;
     width: 150px;
     background-size: cover;
@@ -623,9 +631,11 @@ input{
     }
 
     .carte{
+        background-image: url("../image/carteBaptiste.png");
         height: 30vh;
         width: 85vw;
     }
+
     .contactPage{
         display: flex;
         flex-direction: column-reverse;

@@ -1,3 +1,5 @@
+<?php foreach ($accueils as $accueil): ?>
+
 <div class="burgerMenu">
     <div id="mySidenav" class="sidenav">
         <a id="closeBtn" href="#" class="close">×</a>
@@ -12,7 +14,7 @@
     <a href="#" id="openBtn">
   <span class="burger-icon">
     <span class="backgroundMenu">
-      <img class="menu" src="img/menu.svg" alt="menu burger">
+      <img class="menu" src="/image/menu.svg" alt="menu burger">
     </span>
   </span>
     </a>
@@ -29,7 +31,8 @@
 </div>
 
 <div class="main">
-  <div class="container"><h1 class="welcomeText title">Bienvenue chez TisBarbier</h1></div>
+    <input type="hidden" name="mainData" class="mainData" value="image/<?= $accueil->getImage();  endforeach; ?>">
+    <div class="container"><h1 class="welcomeText title">Bienvenue chez TisBarbier</h1></div>
 </div>
 
 <div class="slogan">
@@ -40,7 +43,7 @@
   <div><h3 class="titlePresentation title">Découvrez Baptiste</h3></div>
   <div class="backgroundDefault">
     <div class="left"></div>
-   <div> <h4 class="right">
+      <div> <h4 class="right">
       Dans un salon soigné et épuré, profitez du professionnalisme et du sérieux d’un coiffeur barbier passionné. <br>
       Il vous attend, paire de ciseaux et rasoir à la main pour faire de vous quelqu’un de nouveau. <br>
       Depuis plus de 14 ans, Baptiste s’efforce de fournir un travail de qualité. <br>
@@ -90,5 +93,5 @@
 </div>
 
 <div class="infos container">
-  <img class="carte" src="/../TisBarbier/img/carteBaptiste.png" alt="Presentation Card">
+  <div class="carte"></div>
 </div>

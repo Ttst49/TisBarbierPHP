@@ -13,8 +13,13 @@ class AdminController extends AbstractController
         return $this->render("barber/connect",["pageTitle"=>"connexion Administrateur"]);
     }
 
-    public function accueil(){
-        return $this->render("admin/Accueil",["pageTitle"=>"accueil admin"]);
+
+    public function prestation(){
+        return $this->render("admin/prestations",["pageTitle"=>"Prestations admin","css"=>"prestations"]);
+    }
+
+    public function realisation(){
+        return $this->render("admin/realisations",["pageTitle"=>"Realisations admin","css"=>"realisations"]);
     }
 
 }

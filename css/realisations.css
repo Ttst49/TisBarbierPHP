@@ -38,7 +38,7 @@ hr{
 }
 
 .systemLogo{
-    background-image: url("../../TisBarbier/img/syspro.jpg");
+    background-image: url("../image/syspro.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 20vh;

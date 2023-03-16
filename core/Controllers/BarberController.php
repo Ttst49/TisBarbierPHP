@@ -2,18 +2,23 @@
 
 namespace Controllers;
 
+use Attributes\DefaultEntity;
 use Attributes\UsesEntity;
+use Entity\Accueil;
 use const http\Client\Curl\POSTREDIR_301;
 
 
-#[UsesEntity(value: false)]
+#[DefaultEntity(entityName: Accueil::class)]
 class BarberController extends AbstractController
 {
 
     public function index()
     {
 
-        return $this->render("barber/accueil", ["pageTitle"=>"Accueil"]);
+        return $this->render("barber/accueil",[
+            "accueils"=>$this->repository->findAll(),
+            "pageTitle"=> "Accueil"
+        ]);
     }
 
     public function realisation()
@@ -47,23 +52,6 @@ class BarberController extends AbstractController
 
         if ($nom && $mail && $message){
 
-
-            /**
-            $targetURL= "https://formsubmit.co/thibautstachnick@gmail.com";
-            $content= array("nom"=>$nom,"mail"=>$mail,"message"=>$message);
-
-            $ch = curl_init();
-            curl_setopt($ch,CURLOPT_URL,$targetURL);
-            curl_setopt($ch,CURLOPT_POST,1);
-            curl_setopt($ch,CURLOPT_POSTFIELDS,$content);
-            curl_setopt($ch, CURLOPT_RETURNTRANSFER,1);
-            curl_setopt($ch, CURLOPT_VERBOSE,true);
-            $result = curl_exec ($ch);
-
-            $response = json_decode($result, true);
-
-            var_dump($response);
-             **/
 
 
             $url = 'https://formsubmit.co/thibautstachnick@gmail.com';

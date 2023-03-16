@@ -75,7 +75,7 @@ input, textarea {
 }
 
 .bottom{
-    background-image: url("../../TisBarbier/img/carteBaptiste.png");
+    background-image: url("../image/carteBaptiste.png");
     background-color: #252525;
     background-repeat: no-repeat;
     background-size: contain;

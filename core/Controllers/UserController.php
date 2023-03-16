@@ -33,8 +33,8 @@ class UserController extends AbstractController
             $this->repository->insert($user);
 
             return $this->redirect([
-                "type"=>"admin",
-                "action"=>"accueil"
+                "type"=>"accueil",
+                "action"=>"index"
             ]);
         }
 
@@ -72,8 +72,8 @@ class UserController extends AbstractController
                 $user->logIn();
 
                 return $this->redirect([
-                   "type"=>"admin",
-                   "action"=>"accueil",
+                       "type"=>"accueil",
+                   "action"=>"index",
                     "info"=>"Bienvenue Baptiste!"
                 ]);
             }
