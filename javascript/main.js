@@ -62,3 +62,20 @@ const mainImage = document.querySelector(".main")
 const mainImageData = document.querySelector(".mainData").value
 
 mainImage.style.backgroundImage = `url("${mainImageData}")`
+
+
+/**
+ *
+ * Verify file Size of an image
+ *
+ */
+
+
+const uploadField = document.getElementById("image");
+
+uploadField.onchange = function() {
+    if(this.files[0].size > 2200000){
+        alert("File is too big!");
+        this.value = "";
+    }
+}

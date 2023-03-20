@@ -5,11 +5,11 @@ namespace Entity;
 
 use Attributes\Table;
 use Attributes\TargetRepository;
-use Repositories\AccueilRepository;
+use Repositories\ImagesRepository;
 
 #[Table(name: "images")]
-#[TargetRepository(repositoryName: AccueilRepository::class)]
-class Accueil extends AbstractEntity
+#[TargetRepository(repositoryName: ImagesRepository::class)]
+class Images extends AbstractEntity
 {
 
     private int $id;

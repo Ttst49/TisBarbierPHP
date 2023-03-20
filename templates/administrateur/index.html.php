@@ -33,17 +33,14 @@
 if ( Session::getUser()){ ?>
 
     <?php
-    if ($accueils){
-        foreach ($accueils as $accueil): ?>
+    if ($images){
+        foreach ($images as $image): ?>
 
 
 
+        <h1><strong><img src="image/<?= $image->getImage();?>" height="750" width="1000"></i></strong></h1>
 
-
-
-        <h1><strong><img src="image/<?= $accueil->getImage();?>" height="750" width="1000"></i></strong></h1>
-
-        <a href="index.php?type=accueil&action=update&id=<?= $accueil->getId() ?>" class="btn btn-outline-info">update</a>
+        <a href="index.php?type=images&action=update&id=<?= $image->getId() ?>" class="btn btn-outline-info">update</a>
 
         <div class="mt-3 mb-5" style="width: 60vh;height: 5px;background-color: orange"></div>
 

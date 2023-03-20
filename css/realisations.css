@@ -13,6 +13,7 @@ html {
     color: white;
     overflow: scroll;
     scroll-behavior: smooth;
+    text-align: center;
 }
 
 .pic{

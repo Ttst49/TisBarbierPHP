@@ -15,11 +15,11 @@ class AdminController extends AbstractController
 
 
     public function prestation(){
-        return $this->render("admin/prestations",["pageTitle"=>"Prestations admin","css"=>"prestations"]);
+        return $this->render("administrateur/prestations",["pageTitle"=>"Prestations administrateur","css"=>"prestations"]);
     }
 
     public function realisation(){
-        return $this->render("admin/realisations",["pageTitle"=>"Realisations admin","css"=>"realisations"]);
+        return $this->render("administrateur/realisations",["pageTitle"=>"Realisations administrateur","css"=>"realisations"]);
     }
 
 }

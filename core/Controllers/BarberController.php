@@ -3,13 +3,11 @@
 namespace Controllers;
 
 use Attributes\DefaultEntity;
-use Attributes\UsesEntity;
-use Entity\Accueil;
+use Entity\Images;
 use Entity\Offre;
-use const http\Client\Curl\POSTREDIR_301;
 
 
-#[DefaultEntity(entityName: Accueil::class)]
+#[DefaultEntity(entityName: Images::class)]
 class BarberController extends AbstractController
 {
 
@@ -17,7 +15,7 @@ class BarberController extends AbstractController
     {
 
         return $this->render("barber/accueil",[
-            "accueils"=>$this->repository->findAll(),
+            "images"=>$this->repository->findAll(),
             "pageTitle"=> "Accueil"
         ]);
     }

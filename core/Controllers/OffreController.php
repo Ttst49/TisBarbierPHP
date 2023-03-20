@@ -12,7 +12,7 @@ class OffreController extends AbstractController
 
     public function index(){
 
-        return $this->render("accueil/index",[
+        return $this->render("administrateur/index",[
             "accueils"=>null,
             "offres"=>$this->repository->findAll(),
             "pageTitle"=>"modifications administrateur"
@@ -26,7 +26,7 @@ class OffreController extends AbstractController
             $request = $this->get("form",["id"=>"number"]);
 
             if ($request){
-                return $this->render("accueil/update",["accueil"=>null,"offre"=>$this->repository->findById($_GET["id"]),"pageTitle"=>"update page"]);
+                return $this->render("administrateur/update",["administrateur"=>null,"offre"=>$this->repository->findById($_GET["id"]),"pageTitle"=>"update page"]);
             }
 
 
@@ -38,7 +38,7 @@ class OffreController extends AbstractController
                 $offre = $this->repository->findById($request["idUpdate"]);
 
                 if (!$offre){
-                    return $this->render("accueil/index",["pageTitle"=>"accueil Admin"]);
+                    return $this->render("administrateur/index",["pageTitle"=>"administrateur Admin"]);
                 }
 
 
@@ -61,7 +61,7 @@ class OffreController extends AbstractController
 
 
                 }
-                return $this->redirect(["type=accueil", "action"=>"index"]);
+                return $this->redirect(["type=administrateur", "action"=>"index"]);
             }
 
 
