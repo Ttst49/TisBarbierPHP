@@ -1,4 +1,4 @@
-<?php foreach ($images as $image): ?>
+
 
 <div class="burgerMenu">
     <div id="mySidenav" class="sidenav">
@@ -31,7 +31,8 @@
 </div>
 
 <div class="main filter">
-    <input type="hidden" name="mainData" class="mainData" value="image/<?= $image->getImage();  endforeach; ?>">
+    <?php foreach ($images as $image): ?>
+    <input type="hidden" name="mainData" class="mainData" value="image/<?php if ($image->getId()===1){ echo $image->getImage(); }  endforeach; ?>">
     <div class="container"><h1 class="welcomeText title noFilter">Bienvenue chez TisBarbier</h1></div>
 </div>
 
