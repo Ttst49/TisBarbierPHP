@@ -30,9 +30,9 @@
     <a class="logoInvisible" href="index.php"><div class="logo"></div></a>
 </div>
 
-<div class="main">
+<div class="main filter">
     <input type="hidden" name="mainData" class="mainData" value="image/<?= $accueil->getImage();  endforeach; ?>">
-    <div class="container"><h1 class="welcomeText title">Bienvenue chez TisBarbier</h1></div>
+    <div class="container"><h1 class="welcomeText title noFilter">Bienvenue chez TisBarbier</h1></div>
 </div>
 
 <div class="slogan">

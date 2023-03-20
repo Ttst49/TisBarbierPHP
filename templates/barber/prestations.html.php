@@ -37,7 +37,12 @@
             <br>
             <span>- changez de style dès maintenant</span>
             <br>
-            <span>-À partir de <price>15€</price></span>
+            <?php foreach ($offres as $offre) {
+            if ($offre->getId()===4): ?>
+                <span>-À partir de <price> <?= $offre->getPrice(); ?>€</price></span>
+            <?php endif; } ?>
+
+
         </div>
     </div>
     <div class="cartePrestation">
@@ -47,7 +52,10 @@
             <br>
             <span>-changez de style dès maintenant</span>
             <br>
-            <span>-À partir de <price>22€</price></span>
+            <?php foreach ($offres as $offre) {
+                if ($offre->getId()===7): ?>
+                    <span>-À partir de <price> <?= $offre->getPrice(); ?>€</price></span>
+                <?php endif; } ?>
         </div>
     </div>
     <div class="cartePrestation premium">
@@ -57,7 +65,10 @@
             <br> <div class="dot"></div>
             <span>car chaque détail <br> compte</span>
             <br> <div class="dot"></div>
-            <span>dès <br> <price>35€</price></span>
+            <?php foreach ($offres as $offre) {
+                if ($offre->getId()===10): ?>
+                    <span>-À partir de <price> <br> <?= $offre->getPrice(); ?>€</price></span>
+                <?php endif; } ?>
         </div>
     </div>
 </div>
@@ -68,10 +79,22 @@
         <h3  class="titleAbove">Cheveux</h3>
         <hr>
         <div class="infosPrixCheveux">
-            <span class="individualPrice">|<br>coupe enfant <br> <price>17€</price></span>
-            <span class="individualPrice">|<br>coupe ado <br> <price>19€</price></span>
-            <span class="individualPrice">|<br>coupe homme<br> <price>22€</price></span>
-            <span class="individualPrice">|<br>coupe ciseaux<br> <price>25€</price></span>
+            <?php foreach ($offres as $offre) {
+                if ($offre->getId()===5): ?>
+                    <span class="individualPrice">|<br>coupe enfant <br> <price> <?= $offre->getPrice(); ?>€</price></span>
+                <?php endif; } ?>
+            <?php foreach ($offres as $offre) {
+                if ($offre->getId()===6): ?>
+                    <span class="individualPrice">|<br>coupe ado <br> <price> <?= $offre->getPrice(); ?>€</price></span>
+                <?php endif; } ?>
+            <?php foreach ($offres as $offre) {
+                if ($offre->getId()===7): ?>
+                    <span class="individualPrice">|<br>coupe homme <br> <price> <?= $offre->getPrice(); ?>€</price></span>
+                <?php endif; } ?>
+            <?php foreach ($offres as $offre) {
+                if ($offre->getId()===8): ?>
+                    <span class="individualPrice">|<br>coupe ciseaux <br> <price> <?= $offre->getPrice(); ?>€</price></span>
+                <?php endif; } ?>
         </div>
     </div>
     <div class="allUnder">
@@ -80,19 +103,32 @@
                 <h3 class="titleAbove">Barbe</h3>
                 <hr>
                 <div class="infosPrixBarbe">
-                    <span class="individualPrice">|<br>Taille de barbe <br> <price>15€</price></span>
-                    <span class="individualPrice">|<br>Forfait coupe + <br> barbe <br> <price>35€</price></span>
+                    <?php foreach ($offres as $offre) {
+                        if ($offre->getId()===4): ?>
+                            <span class="individualPrice">|<br>Taille de barbe <br> <price> <?= $offre->getPrice(); ?>€</price></span>
+                        <?php endif; } ?>
+                    <?php foreach ($offres as $offre) {
+                        if ($offre->getId()===10): ?>
+                            <span class="individualPrice">|<br>Forfait coupe + barbe <br> <price> <?= $offre->getPrice(); ?>€</price></span>
+                        <?php endif; } ?>
                 </div>
             </div>
             <div class="tarifsSpecial">
                 <h3 class="titleAbove">Spécial</h3>
                 <hr>
                 <div class="infosPrixSpecial">
-                    <span class="individualPrice">|<br>Permanente<br> <price>28€</price></span>
-                    <span class="individualPrice">|<br>Décoloration + <br> patine <br> <price>45€</price></span>
+                    <?php foreach ($offres as $offre) {
+                        if ($offre->getId()===9): ?>
+                            <span class="individualPrice">|<br>Permanente <br> <price> <?= $offre->getPrice(); ?>€</price></span>
+                        <?php endif; } ?>
+                    <?php foreach ($offres as $offre) {
+                        if ($offre->getId()===11): ?>
+                            <span class="individualPrice">|<br>Décoloration + patine <br> <price> <?= $offre->getPrice(); ?>€</price></span>
+                        <?php endif; } ?>
                 </div>
             </div>
         </div>
+
         <div class="boutonInterest">
             <h3 class="titleInterested"><span>Intéressé?</span></h3>
             <a href="index.php?type=barber&action=contact"><button class="interest" type="button">Nous contacter</button></a>

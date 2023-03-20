@@ -32,7 +32,13 @@
 
 if ( Session::getUser()){ ?>
 
-    <?php foreach ($accueils as $accueil): ?>
+    <?php
+    if ($accueils){
+        foreach ($accueils as $accueil): ?>
+
+
+
+
 
 
         <h1><strong><img src="image/<?= $accueil->getImage();?>" height="750" width="1000"></i></strong></h1>
@@ -41,9 +47,25 @@ if ( Session::getUser()){ ?>
 
         <div class="mt-3 mb-5" style="width: 60vh;height: 5px;background-color: orange"></div>
 
+            <a href="index.php?type=offre&action=index"><button>page suivante</button></a>
 
 
-    <?php endforeach; ?>
+
+    <?php endforeach; } ?>
+
+       <?php
+        if ($offres){
+            foreach ($offres as $offre): ?>
+
+                <h1><span class="titleAbove" style="color: white"><?= $offre->getContent()?>:</span></h1>
+                <h2><strong class="link"><?= $offre->getPrice() ?>€</i></strong></h2>
+
+                <a href="index.php?type=offre&action=update&id=<?= $offre->getId() ?>" class="btn btn-outline-info">update</a>
+
+                <div class="mt-3 mb-5" style="width: 60vh;height: 5px;background-color: orange"></div>
+
+
+            <?php endforeach; } ?>
 
 
 <?php }else{ ?>

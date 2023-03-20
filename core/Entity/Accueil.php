@@ -7,7 +7,7 @@ use Attributes\Table;
 use Attributes\TargetRepository;
 use Repositories\AccueilRepository;
 
-#[Table(name: "accueil")]
+#[Table(name: "images")]
 #[TargetRepository(repositoryName: AccueilRepository::class)]
 class Accueil extends AbstractEntity
 {

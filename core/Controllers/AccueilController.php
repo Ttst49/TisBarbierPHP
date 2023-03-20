@@ -16,6 +16,7 @@ class AccueilController extends AbstractController
 
         return $this->render("accueil/index",[
             "accueils"=>$this->repository->findAll(),
+            "offres"=>null,
             "pageTitle"=> "modifications administrateur"
         ]);
     }

@@ -5,6 +5,7 @@ namespace Controllers;
 use Attributes\DefaultEntity;
 use Attributes\UsesEntity;
 use Entity\Accueil;
+use Entity\Offre;
 use const http\Client\Curl\POSTREDIR_301;
 
 
@@ -29,7 +30,8 @@ class BarberController extends AbstractController
 
     public function prestation(){
 
-        return $this->render("barber/prestations",["pageTitle"=>"Préstations","css"=>"prestations"]);
+
+        return $this->render("barber/prestations",["offres"=>$this->getRepository(entityName: Offre::class)->findAll(),"pageTitle"=>"Préstations","css"=>"prestations"]);
     }
 
 
