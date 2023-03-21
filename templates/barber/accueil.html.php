@@ -14,7 +14,7 @@
     <a href="#" id="openBtn">
   <span class="burger-icon">
     <span class="backgroundMenu">
-      <img class="menu" src="/image/menu.svg" alt="menu burger">
+      <img class="menu" src="./image/menu.svg" alt="menu burger">
     </span>
   </span>
     </a>
@@ -32,7 +32,8 @@
 
 <div class="main filter">
     <?php foreach ($images as $image): ?>
-    <input type="hidden" name="mainData" class="mainData" value="image/<?php if ($image->getId()===1){ echo $image->getImage(); }  endforeach; ?>">
+    <input type="hidden" name="mainData" class="mainData" value="image/<?php if ($image->getId()===1){ echo $image->getImage(); ?>">
+    <?php } endforeach; ?> ?>
     <div class="container"><h1 class="welcomeText title noFilter">Bienvenue chez TisBarbier</h1></div>
 </div>
 

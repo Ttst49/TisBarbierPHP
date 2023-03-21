@@ -12,7 +12,7 @@
     <a href="#" id="openBtn">
   <span class="burger-icon">
     <span class="backgroundMenu">
-      <img class="menu" src="/image/menu.svg" alt="menu burger">
+      <img class="menu" src="./image/menu.svg" alt="menu burger">
     </span>
   </span>
     </a>
@@ -31,37 +31,92 @@
 
 <div class="barbeLine">
     <div class="pics">
-        <img class="pic" src="./image/logo.png" alt="#">
-        <img class="pic" src="./image/logo.png" alt="#">
-        <img class="pic" src="./image/logo.png" alt="#">
+        <?php foreach ($images as $image) {
+            if ($image->getId()===2): ?>
+                <img class="pic" src= "./image/<?= $image->getImage() ?>" alt="<?= $image->getAlt() ?>">
+            <?php endif; } ?>
+
+        <?php foreach ($images as $image) {
+            if ($image->getId()===3): ?>
+                <img class="pic" src= "./image/<?= $image->getImage() ?>" alt="<?= $image->getAlt() ?>">
+            <?php endif; } ?>
+        <?php foreach ($images as $image) {
+            if ($image->getId()===4): ?>
+                <img class="pic" src= "./image/<?= $image->getImage() ?>" alt="<?= $image->getAlt() ?>">
+            <?php endif; } ?>
         <span>Barbe</span>
-        <img class="pic" src="./image/logo.png" alt="#">
-        <img class="pic" src="./image/logo.png" alt="#">
-        <img class="pic" src="./image/logo.png" alt="#">
+        <?php foreach ($images as $image) {
+            if ($image->getId()===5): ?>
+                <img class="pic" src= "./image/<?= $image->getImage() ?>" alt="<?= $image->getAlt() ?>">
+            <?php endif; } ?>
+        <?php foreach ($images as $image) {
+            if ($image->getId()===6): ?>
+                <img class="pic" src= "./image/<?= $image->getImage() ?>" alt="<?= $image->getAlt() ?>">
+            <?php endif; } ?>
+        <?php foreach ($images as $image) {
+            if ($image->getId()===7): ?>
+                <img class="pic" src= "./image/<?= $image->getImage() ?>" alt="<?= $image->getAlt() ?>">
+            <?php endif; } ?>
     </div>
 </div>
 
 <div class="cheveuxLine">
     <div class="pics">
-        <img class="pic" src="./image/logo.png" alt="#">
-        <img class="pic" src="./image/logo.png" alt="#">
-        <img class="pic" src="./image/logo.png" alt="#">
+        <?php foreach ($images as $image) {
+            if ($image->getId()===8): ?>
+                <img class="pic" src= "./image/<?= $image->getImage() ?>" alt="<?= $image->getAlt() ?>">
+            <?php endif; } ?>
+        <?php foreach ($images as $image) {
+            if ($image->getId()===9): ?>
+                <img class="pic" src= "./image/<?= $image->getImage() ?>" alt="<?= $image->getAlt() ?>">
+            <?php endif; } ?>
+        <?php foreach ($images as $image) {
+            if ($image->getId()===10): ?>
+                <img class="pic" src= "./image/<?= $image->getImage() ?>" alt="<?= $image->getAlt() ?>">
+            <?php endif; } ?>
         <span>Cheveux</span>
-        <img class="pic" src="./image/logo.png" alt="#">
-        <img class="pic" src="./image/logo.png" alt="#">
-        <img class="pic" src="./image/logo.png" alt="#">
+        <?php foreach ($images as $image) {
+            if ($image->getId()===11): ?>
+                <img class="pic" src= "./image/<?= $image->getImage() ?>" alt="<?= $image->getAlt() ?>">
+            <?php endif; } ?>
+        <?php foreach ($images as $image) {
+            if ($image->getId()===12): ?>
+                <img class="pic" src= "./image/<?= $image->getImage() ?>" alt="<?= $image->getAlt() ?>">
+            <?php endif; } ?>
+        <?php foreach ($images as $image) {
+            if ($image->getId()===13): ?>
+                <img class="pic" src= "./image/<?= $image->getImage() ?>" alt="<?= $image->getAlt() ?>">
+            <?php endif; } ?>
     </div>
 </div>
 
 <div class="totalLine">
     <div class="pics">
-        <img class="pic" src="./image/logo.png" alt="#">
-        <img class="pic" src="./image/logo.png" alt="#">
-        <img class="pic" src="./image/logo.png" alt="#">
+        <?php foreach ($images as $image) {
+            if ($image->getId()===14): ?>
+                <img class="pic" src= "./image/<?= $image->getImage() ?>" alt="<?= $image->getAlt() ?>">
+            <?php endif; } ?>
+        <?php foreach ($images as $image) {
+            if ($image->getId()===15): ?>
+                <img class="pic" src= "./image/<?= $image->getImage() ?>" alt="<?= $image->getAlt() ?>">
+            <?php endif; } ?>
+        <?php foreach ($images as $image) {
+            if ($image->getId()===16): ?>
+                <img class="pic" src= "./image/<?= $image->getImage() ?>" alt="<?= $image->getAlt() ?>">
+            <?php endif; } ?>
         <span>La totale</span>
-        <img class="pic" src="./image/logo.png" alt="#">
-        <img class="pic" src="./image/logo.png" alt="#">
-        <img class="pic" src="./image/logo.png" alt="#">
+        <?php foreach ($images as $image) {
+            if ($image->getId()===17): ?>
+                <img class="pic" src= "./image/<?= $image->getImage() ?>" alt="<?= $image->getAlt() ?>">
+            <?php endif; } ?>
+        <?php foreach ($images as $image) {
+            if ($image->getId()===18): ?>
+                <img class="pic" src= "./image/<?= $image->getImage() ?>" alt="<?= $image->getAlt() ?>">
+            <?php endif; } ?>
+        <?php foreach ($images as $image) {
+            if ($image->getId()===19): ?>
+                <img class="pic" src= "./image/<?= $image->getImage() ?>" alt="<?= $image->getAlt() ?>">
+            <?php endif; } ?>
     </div>
 </div>
 

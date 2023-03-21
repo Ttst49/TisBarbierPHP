@@ -14,6 +14,7 @@ class Images extends AbstractEntity
 
     private int $id;
     private string $image;
+    private string $alt;
 
     /**
      * @return int
@@ -37,6 +38,22 @@ class Images extends AbstractEntity
     public function setImage(string $image): void
     {
         $this->image = $image;
+    }
+
+    /**
+     * @return string
+     */
+    public function getAlt(): string
+    {
+        return $this->alt;
+    }
+
+    /**
+     * @param string $alt
+     */
+    public function setAlt(string $alt): void
+    {
+        $this->alt = $alt;
     }
 
 }

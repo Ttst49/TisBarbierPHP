@@ -12,7 +12,7 @@
     <a href="#" id="openBtn">
   <span class="burger-icon">
     <span class="backgroundMenu">
-      <img class="menu" src="/image/menu.svg" alt="menu burger">
+      <img class="menu" src="./image/menu.svg" alt="menu burger">
     </span>
   </span>
     </a>
@@ -81,19 +81,19 @@
         <div class="infosPrixCheveux">
             <?php foreach ($offres as $offre) {
                 if ($offre->getId()===5): ?>
-                    <span class="individualPrice">|<br>coupe enfant <br> <price> <?= $offre->getPrice(); ?>€</price></span>
+                    <span class="individualPrice">|<br><?= $offre->getContent()?> <br> <price> <?= $offre->getPrice(); ?>€</price></span>
                 <?php endif; } ?>
             <?php foreach ($offres as $offre) {
                 if ($offre->getId()===6): ?>
-                    <span class="individualPrice">|<br>coupe ado <br> <price> <?= $offre->getPrice(); ?>€</price></span>
+                    <span class="individualPrice">|<br><?= $offre->getContent()?> <br> <price> <?= $offre->getPrice(); ?>€</price></span>
                 <?php endif; } ?>
             <?php foreach ($offres as $offre) {
                 if ($offre->getId()===7): ?>
-                    <span class="individualPrice">|<br>coupe homme <br> <price> <?= $offre->getPrice(); ?>€</price></span>
+                    <span class="individualPrice">|<br><?= $offre->getContent()?> <br> <price> <?= $offre->getPrice(); ?>€</price></span>
                 <?php endif; } ?>
             <?php foreach ($offres as $offre) {
                 if ($offre->getId()===8): ?>
-                    <span class="individualPrice">|<br>coupe ciseaux <br> <price> <?= $offre->getPrice(); ?>€</price></span>
+                    <span class="individualPrice">|<br><?= $offre->getContent()?> <br> <price> <?= $offre->getPrice(); ?>€</price></span>
                 <?php endif; } ?>
         </div>
     </div>
@@ -105,11 +105,11 @@
                 <div class="infosPrixBarbe">
                     <?php foreach ($offres as $offre) {
                         if ($offre->getId()===4): ?>
-                            <span class="individualPrice">|<br>Taille de barbe <br> <price> <?= $offre->getPrice(); ?>€</price></span>
+                            <span class="individualPrice">|<br><?= $offre->getContent()?> <br> <price> <?= $offre->getPrice(); ?>€</price></span>
                         <?php endif; } ?>
                     <?php foreach ($offres as $offre) {
                         if ($offre->getId()===10): ?>
-                            <span class="individualPrice">|<br>Forfait coupe + barbe <br> <price> <?= $offre->getPrice(); ?>€</price></span>
+                            <span class="individualPrice">|<br><?= $offre->getContent()?> <br> <price> <?= $offre->getPrice(); ?>€</price></span>
                         <?php endif; } ?>
                 </div>
             </div>
@@ -119,14 +119,47 @@
                 <div class="infosPrixSpecial">
                     <?php foreach ($offres as $offre) {
                         if ($offre->getId()===9): ?>
-                            <span class="individualPrice">|<br>Permanente <br> <price> <?= $offre->getPrice(); ?>€</price></span>
+                            <span class="individualPrice">|<br><?= $offre->getContent()?> <br> <price> <?= $offre->getPrice(); ?>€</price></span>
                         <?php endif; } ?>
                     <?php foreach ($offres as $offre) {
                         if ($offre->getId()===11): ?>
-                            <span class="individualPrice">|<br>Décoloration + patine <br> <price> <?= $offre->getPrice(); ?>€</price></span>
+                            <span class="individualPrice">|<br><?= $offre->getContent()?> <br> <price> <?= $offre->getPrice(); ?>€</price></span>
                         <?php endif; } ?>
                 </div>
             </div>
+
+            <?php if ($offre->getId()>11 && $offre->getPrice() != 1): ?>
+
+
+            <div class="tarifsCouleurs">
+                <h3  class="titleAbove">Couleurs</h3>
+                <hr>
+                <div class="infosPrixCouleurs">
+                    <?php foreach ($offres as $offre) {
+                        if ($offre->getId()===12): ?>
+                            <span class="individualPrice">|<br> <?= $offre->getContent()?> <br> <price> <?= $offre->getPrice(); ?>€</price></span>
+                        <?php endif; } ?>
+                    <?php foreach ($offres as $offre) {
+                        if ($offre->getId()===13): ?>
+                            <span class="individualPrice">|<br><?= $offre->getContent()?> <br> <price> <?= $offre->getPrice(); ?>€</price></span>
+                        <?php endif; } ?>
+                    <?php foreach ($offres as $offre) {
+                        if ($offre->getId()===14): ?>
+                            <span class="individualPrice">|<br><?= $offre->getContent()?> <br> <price> <?= $offre->getPrice(); ?>€</price></span>
+                        <?php endif; } ?>
+                    <?php foreach ($offres as $offre) {
+                        if ($offre->getId()===15): ?>
+                            <span class="individualPrice">|<br><?= $offre->getContent()?> <br> <price> <?= $offre->getPrice(); ?>€</price></span>
+                        <?php endif; } ?>
+                </div>
+            </div>
+
+            <?php endif; ?>
+
+
+
+
+
         </div>
 
         <div class="boutonInterest">

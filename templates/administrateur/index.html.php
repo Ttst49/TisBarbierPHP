@@ -12,7 +12,7 @@
     <a href="#" id="openBtn">
   <span class="burger-icon">
     <span class="backgroundMenu">
-      <img class="menu" src="/image/menu.svg" alt="menu burger">
+      <img class="menu" src="./image/menu.svg" alt="menu burger">
     </span>
   </span>
     </a>
@@ -44,11 +44,12 @@ if ( Session::getUser()){ ?>
 
         <div class="mt-3 mb-5" style="width: 60vh;height: 5px;background-color: orange"></div>
 
-            <a href="index.php?type=offre&action=index"><button>page suivante</button></a>
 
+    <?php endforeach; ?>
 
+        <a href="index.php?type=offre&action=index"><button>page suivante</button></a>
 
-    <?php endforeach; } ?>
+        <?php } ?>
 
        <?php
         if ($offres){
@@ -62,9 +63,14 @@ if ( Session::getUser()){ ?>
                 <div class="mt-3 mb-5" style="width: 60vh;height: 5px;background-color: orange"></div>
 
 
-            <?php endforeach; } ?>
+
+            <?php endforeach; ?>
+        <a href="index.php?type=images&action=index"><button>page précédente</button></a>
+            <?php } ?>
+
 
 
 <?php }else{ ?>
     <p class="link">Erreur</p>
 <?php } ?>
+

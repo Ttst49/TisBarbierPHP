@@ -23,7 +23,7 @@ class BarberController extends AbstractController
     public function realisation()
     {
 
-        return $this->render("barber/realisations", ["pageTitle"=>"Réalisations","css"=>"realisations"]);
+        return $this->render("barber/realisations", ["images"=>$this->repository->findAll(),"pageTitle"=>"Réalisations","css"=>"realisations"]);
     }
 
     public function prestation(){

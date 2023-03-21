@@ -66,7 +66,7 @@
 
 
 .tarifs{
-    height: 130vh;
+    height: 160vh;
     width: 90%;
     margin-left: 5%;
     color: white;
@@ -78,7 +78,7 @@
 }
 
 
-.tarifsCheveux,.tarifsBarbe,.tarifsSpecial{
+.tarifsCheveux,.tarifsBarbe,.tarifsSpecial,.tarifsCouleurs{
     margin-left: 15vw;
     margin-bottom: 5vh;
     font-size: 3vh;
@@ -89,6 +89,9 @@
 }
 
 .tarifsOther{
+    width: 50vw;
+}
+.tarifsCouleurs{
     width: 50vw;
 }
 
@@ -112,7 +115,7 @@
 
 }
 
-.infosPrixCheveux,.infosPrixBarbe,.infosPrixSpecial{
+.infosPrixCheveux,.infosPrixBarbe,.infosPrixSpecial,.infosPrixCouleurs{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -175,7 +178,7 @@ price{
     }
 
     .tarifs,.allUnder{
-        height: 320vh;
+        height: 370vh;
         display: flex;
         flex-direction: column;
     }
@@ -186,7 +189,7 @@ price{
         margin-left: -12.7vh;
         margin-bottom: 30vh;
     }
-    .tarifsBarbe,.tarifsSpecial{
+    .tarifsBarbe,.tarifsSpecial,.tarifsCouleurs{
         transform: rotate(90deg);
         width: 50vh;
         margin-top: 20vh;
