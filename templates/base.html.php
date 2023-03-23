@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?= $pageTitle ?></title>
+    <link rel="icon" href="../image/logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+          integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+          crossorigin=""/>
     <link href="https://fonts.googleapis.com/css2?family=Gloock&family=Playball&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../TisBarbier/css/style.css">
@@ -14,7 +18,7 @@
 
 
 </head>
-
+<body onload="initialize()">
 <div class="banner">
     <p class="content">
         <a class="nameOnBanner" href="index.php"><span>TisBarbier</span></a>
@@ -25,7 +29,7 @@
 <?= $pageContent ?>
 
 
-
+</body>
 <footer class="footer">
     <div class="leftFooter">
         <div class="logoFooter"></div>

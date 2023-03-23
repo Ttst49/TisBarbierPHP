@@ -34,7 +34,7 @@ input, textarea {
     flex-direction: column;
     justify-content: center;
     height: 90vh;
-    width: 50vw;
+    width: 95vh;
 }
 
 .rightContact{
@@ -103,5 +103,4 @@ input, textarea {
     .bottom{
         width: 80vw;
     }
-
 }

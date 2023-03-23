@@ -160,7 +160,7 @@ page Accueil
 
 .left {
     height: 25vh;
-    width: 25vh;
+    width: 35vh;
     background-color: #D9D9D9;
     border-radius: 100%;
     margin-right: 3vw;
@@ -655,6 +655,9 @@ input{
     .gris{
         color: #313131;
         cursor: default;
+    }
+    .left{
+        width: 25vh;
     }
 
 }
