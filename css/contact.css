@@ -20,6 +20,10 @@ input, textarea {
     width: 80%;
 }
 
+input:hover,textarea:hover{
+    border: 2px solid #D4AF37;
+}
+
 .contactPage{
     display: flex;
     flex-direction: row;
@@ -59,6 +63,25 @@ input, textarea {
     font-size: 3vh;
 }
 
+.boutonSend:hover{
+    animation: movement 3s infinite;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+
+@keyframes movement {
+    0%{
+        scale: 1;
+    }
+    25%{
+        scale: 1.1;
+        color: #D4AF37;
+    }
+
+}
+
 .backgroundMaps{
     height: 70vh;
     width: 40vw;
@@ -83,6 +106,7 @@ input, textarea {
     height: 30vh;
     width: 40vw;
     border: none;
+    margin-top: 5vh;
 }
 
 

@@ -2,6 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="referrer" content="origin">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?= $pageTitle ?></title>
     <link rel="icon" href="../image/logo.png">
@@ -18,7 +19,7 @@
 
 
 </head>
-<body onload="initialize()">
+<body onload="initialize()" >
 <div class="banner">
     <p class="content">
         <a class="nameOnBanner" href="index.php"><span>TisBarbier</span></a>
@@ -60,4 +61,5 @@
         integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
         crossorigin=""></script>
 <script src="../../TisBarbier/javascript/main.js"></script>
+
 </html>

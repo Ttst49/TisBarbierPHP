@@ -30,12 +30,11 @@
 </div>
 
 <div class="barbeLine">
-    <div class="pics">
+    <div class="pics pics1">
         <?php foreach ($images as $image) {
             if ($image->getId()===2): ?>
                 <img class="pic" src= "./image/<?= $image->getImage() ?>" alt="<?= $image->getAlt() ?>">
             <?php endif; } ?>
-
         <?php foreach ($images as $image) {
             if ($image->getId()===3): ?>
                 <img class="pic" src= "./image/<?= $image->getImage() ?>" alt="<?= $image->getAlt() ?>">
@@ -61,7 +60,7 @@
 </div>
 
 <div class="cheveuxLine">
-    <div class="pics">
+    <div class="pics pics2">
         <?php foreach ($images as $image) {
             if ($image->getId()===8): ?>
                 <img class="pic" src= "./image/<?= $image->getImage() ?>" alt="<?= $image->getAlt() ?>">
@@ -91,7 +90,7 @@
 </div>
 
 <div class="totalLine">
-    <div class="pics">
+    <div class="pics pics3">
         <?php foreach ($images as $image) {
             if ($image->getId()===14): ?>
                 <img class="pic" src= "./image/<?= $image->getImage() ?>" alt="<?= $image->getAlt() ?>">
@@ -120,7 +119,7 @@
     </div>
 </div>
 
-<div class="systemProfessional">
+<div onload="moveToMiddle()" class="systemProfessional">
     <hr>
     <p>
         TisBarbier est accompagné dans son salon par la marque System Professional. <br>

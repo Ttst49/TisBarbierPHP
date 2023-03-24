@@ -17,13 +17,12 @@ body{
     justify-content: space-around;
 }
 
-.logo{
+.logo {
     background-image: url("../image/logo.png");
     height: 10vh;
     width: 10vh;
     background-size: cover;
     background-repeat: no-repeat;
-
 }
 
 .links{
@@ -35,6 +34,10 @@ body{
     margin-right: 5vw;
     color: white;
     font-size: 35px;
+}
+
+.link:hover{
+    color: #D4AF37;
 }
 
 
@@ -50,12 +53,17 @@ body{
     border-width: 5px;
 }
 
+
 .nameOnBanner{
     font-size: 6vh;
     text-align: center;
     color: white;
     border-radius: 15px;
     text-decoration: none;
+}
+
+.nameOnBanner:hover{
+    color: #D4AF37;
 }
 
 .logoOnBanner{
@@ -74,6 +82,9 @@ body{
 .gris{
     color: #313131;
     cursor: default;
+}
+.gris:hover{
+    color: #313131;
 }
 
 /*
@@ -261,6 +272,12 @@ page Accueil
     text-align: center;
     font-size: 10vh;
     font-family: Poppins, sans-serif;
+    transition: 1s ease border-radius;
+}
+
+.boutonPrestation:hover{
+    border-radius: 25px;
+    transition: 1s ease border-radius;
 }
 
 .contact{

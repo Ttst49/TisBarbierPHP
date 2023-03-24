@@ -34,7 +34,9 @@
     <?php foreach ($images as $image): ?>
     <input type="hidden" name="mainData" class="mainData" value="image/<?php if ($image->getId()===1){ echo $image->getImage(); ?>">
     <?php } endforeach; ?> ?>
+    <div class="container">
     <div class="container"><h1 class="welcomeText title noFilter">Bienvenue chez TisBarbier</h1></div>
+    </div>
 </div>
 
 <div class="slogan">

@@ -62,3 +62,4 @@ const mainImage = document.querySelector(".main")
 const mainImageData = document.querySelector(".mainData").value
 
 mainImage.style.backgroundImage = `url("${mainImageData}")`
+
