@@ -5,7 +5,7 @@
     <meta name="referrer" content="origin">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?= $pageTitle ?></title>
-    <link rel="icon" href="../image/logo.png">
+    <link rel="icon" href="../public/image/logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
@@ -13,7 +13,7 @@
           crossorigin=""/>
     <link href="https://fonts.googleapis.com/css2?family=Gloock&family=Playball&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../TisBarbier/css/style.css">
+    <link rel="stylesheet" href="../public/css/style.css">
     <link rel="stylesheet" href="../../TisBarbier/css/<?= $css ?>.css">
 
 
@@ -60,6 +60,6 @@
 <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
         integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
         crossorigin=""></script>
-<script src="../../TisBarbier/javascript/main.js"></script>
+<script src="../public/javascript/main.js"></script>
 
 </html>

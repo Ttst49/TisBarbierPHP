@@ -70,7 +70,21 @@ class BarberController extends AbstractController
             var_dump($result);**/
 
 
+            $formData= array(
+                "nom"=>$nom,
+                "mail"=>$mail,
+                "message"=>$message
+            );
 
+            $str= http_build_query($formData);
+
+            $curl= curl_init();
+            curl_setopt($curl,CURLOPT_URL,"http://formsubmit.co/thibautstachnick@gmail.com");
+            curl_setopt($curl,CURLOPT_POST,1);
+            curl_setopt($curl,CURLOPT_POSTFIELDS,$str);
+            curl_setopt($curl,CURLOPT_RETURNTRANSFER,true);
+            curl_exec($curl);
+            curl_close($curl);
 
         }
 
