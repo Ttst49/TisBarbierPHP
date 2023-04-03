@@ -48,9 +48,9 @@
   <div class="backgroundDefault">
     <div class="left"></div>
       <div> <h4 class="right">
-      Dans un salon soigné et épuré, profitez du professionnalisme et du sérieux d’un coiffeur barbier passionné. <br>
+      Dans un salon soigné et épuré situé à Oyonnax, profitez du professionnalisme et du sérieux d’un coiffeur barbier passionné. <br>
       Il vous attend, paire de ciseaux et rasoir à la main pour faire de vous quelqu’un de nouveau. <br>
-      Depuis plus de 14 ans, Baptiste s’efforce de fournir un travail de qualité. <br>
+      Depuis plus de 14 ans, Baptiste s’efforce de fournir un travail de qualité en tant que barbier. <br>
    </h4></div>
 
   </div>
@@ -96,6 +96,12 @@
   </div>
 </div>
 
+
 <div class="infos container">
-  <div class="carte"></div>
+    <div class="carte"></div>
+    <div class="textInfo">
+        <h3>Venez nous rencontrer au salon, dans un cadre amical et professionnel, pour redonner de la vie à vos cheveux </h3>
+        <h4>Situé à Oyonnax, TisBarbier est la destination à choisir pour s'occuper de votre chevelure grâce à l'expérience de notre barbier ainsi que les produits de la marque "System Professional"</h4>
+
+    </div>
 </div>

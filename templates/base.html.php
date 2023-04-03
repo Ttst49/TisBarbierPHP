@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <meta name="description" content="Bienvenue chez TisBarbier | découvrez ce que nous avons à offrir à vos cheveux dans le secteur d'Oyonnax et ses alentours">
+    <meta name="keywords" content="Barbier, Coiffeur, Oyonnax, Cheveux, salon de coiffure, barber, barbershop">
     <meta charset="UTF-8">
     <meta name="referrer" content="origin">
     <meta name="viewport" content="width=device-width, initial-scale=1">

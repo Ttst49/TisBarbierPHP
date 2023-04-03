@@ -31,6 +31,7 @@
 <div class="contactPage container-fluid">
     <div class="leftContact">
         <?php if (!$nom && !$mail): ?>
+        <h1>Nous contacter</h1>
         <form action="index.php?type=barber&action=contact" method="post">
             <input type="hidden" name="_template" value="table">
             <label for="name">Votre nom?</label> <br>
@@ -42,7 +43,8 @@
             <button class="boutonSend" type="submit">Envoyer</button>
         </form>
         <?php else: ?>
-        <form action="index.php?type=barber&action=contact&nom=<?= $nom ?>&mail=<?= $mail?>" method="post">
+            <h1>Nous contacter</h1>
+            <form action="index.php?type=barber&action=contact&nom=<?= $nom ?>&mail=<?= $mail?>" method="post">
             <input type="hidden" name="_template" value="table">
             <label for="name">Votre nom?</label> <br>
             <input type="text" name="nom" id="nom" value="<?= $nom ?>" required><br>

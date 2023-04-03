@@ -378,7 +378,7 @@ input{
 
 .infos{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     margin-top: 10vh;
@@ -386,6 +386,12 @@ input{
     height: 40vh;
     margin-bottom: 20vh;
 
+}
+.textInfo{
+    color: white;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    text-align: center;
 }
 
 .carte{

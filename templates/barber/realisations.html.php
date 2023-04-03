@@ -120,6 +120,7 @@
 </div>
 
 <div onload="moveToMiddle()" class="systemProfessional">
+    <h1>Les produits que l'on utilise</h1>
     <hr>
     <p>
         TisBarbier est accompagné dans son salon par la marque System Professional. <br>

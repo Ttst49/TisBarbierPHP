@@ -16,20 +16,20 @@ class BarberController extends AbstractController
 
         return $this->render("barber/accueil",[
             "images"=>$this->repository->findAll(),
-            "pageTitle"=> "Accueil"
+            "pageTitle"=> "TisBarbier | Barbier/coiffeur Oyonnax"
         ]);
     }
 
     public function realisation()
     {
 
-        return $this->render("barber/realisations", ["images"=>$this->repository->findAll(),"pageTitle"=>"Réalisations","css"=>"realisations"]);
+        return $this->render("barber/realisations", ["images"=>$this->repository->findAll(),"pageTitle"=>"TisBarbier | Réalisations Barbier/coiffeur","css"=>"realisations"]);
     }
 
     public function prestation(){
 
 
-        return $this->render("barber/prestations",["offres"=>$this->getRepository(entityName: Offre::class)->findAll(),"pageTitle"=>"Préstations","css"=>"prestations"]);
+        return $this->render("barber/prestations",["offres"=>$this->getRepository(entityName: Offre::class)->findAll(),"pageTitle"=>"TisBarbier | Prestations Barbier/coiffeur","css"=>"prestations"]);
     }
 
 
@@ -89,12 +89,12 @@ class BarberController extends AbstractController
         }
 
 
-        return $this->render("barber/contact",["pageTitle"=>"Contact","css"=>"contact","nom"=>$nom,"mail"=>$mail]);
+        return $this->render("barber/contact",["pageTitle"=>"TisBarbier | Contact","css"=>"contact","nom"=>$nom,"mail"=>$mail]);
     }
 
 
     public function mentions(){
-        return $this->render("barber/mentionsLégales",["pageTitle"=>"Mention Légales"]);
+        return $this->render("barber/mentionsLégales",["pageTitle"=>"TisBarbier | Mention Légales"]);
     }
 
     public function connect(){

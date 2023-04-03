@@ -19,7 +19,7 @@
 </div>
 
 <div class="navbar">
-    <a href="$index.php"><div class="logo"></div></a>
+    <a href="index.php"><div class="logo"></div></a>
     <div class="links">
         <a class="link" href="index.php?type=barber&action=realisation">Réalisations</a>
         <a class="link gris" href="#">Prestations</a>
@@ -74,9 +74,9 @@
 </div>
 
 <div class="tarifs">
-    <div><h2 class="titleTarifs">Tarifs</h2></div>
+    <div><h1 class="titleTarifs">Tarifs</h1></div>
     <div class="tarifsCheveux">
-        <h3  class="titleAbove">Cheveux</h3>
+        <h2  class="titleAbove">Cheveux</h2>
         <hr>
         <div class="infosPrixCheveux">
             <?php foreach ($offres as $offre) {
