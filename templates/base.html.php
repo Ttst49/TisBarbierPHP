@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
+    <meta name="referrer" content="no-referrer" >
     <meta name="description" content="Bienvenue chez TisBarbier | découvrez ce que nous avons à offrir à vos cheveux dans le secteur d'Oyonnax et ses alentours">
     <meta name="keywords" content="Barbier, Coiffeur, Oyonnax, Cheveux, salon de coiffure, barber, barbershop">
     <meta charset="UTF-8">
@@ -37,9 +39,9 @@
     <div class="leftFooter">
         <div class="logoFooter"></div>
         <div class="linksFooter">
-            <div><h5><a class="linkFooter" href="index.php?type=barber&action=contact">Nous contacter</a></h5></div>
-            <div><h5><a class="linkFooter" href="index.php?type=barber&action=prestation">Nos prestations</a></h5></div>
-            <div><h5><a class="linkFooter" href="index.php?type=barber&action=mentions">Lire nos mentions légales</a></h5></div>
+            <div><h5><a class="linkFooter" href="index.php?type=static&action=contact">Nous contacter</a></h5></div>
+            <div><h5><a class="linkFooter" href="index.php?type=advanced&action=prestation">Nos prestations</a></h5></div>
+            <div><h5><a class="linkFooter" href="index.php?type=static&action=mentions">Lire nos mentions légales</a></h5></div>
         </div>
     </div>
     <div class="middleFooter">

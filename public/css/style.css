@@ -366,7 +366,7 @@ input{
 .boutonContact{
     display: flex;
     height: 10vh;
-    width: 15vw;
+    width: 20vw;
     background-color: #384896;
     align-items: center;
     justify-content: center;

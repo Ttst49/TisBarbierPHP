@@ -5,9 +5,9 @@
         <a id="closeBtn" href="#" class="close">×</a>
         <ul>
             <li><a class="linkModified" href="#"><span class="gris">Accueil</span></a></li>
-            <li><a class="linkModified" href="index.php?type=barber&action=realisation"><span>Réalisations</span></a></li>
-            <li><a class="linkModified" href="index.php?type=barber&action=prestation"><span>Prestations</span></a></li>
-            <li><a class="linkModified" href="index.php?type=barber&action=contact"><span>Contact</span></a></li>
+            <li><a class="linkModified" href="index.php?type=advanced&action=realisation"><span>Réalisations</span></a></li>
+            <li><a class="linkModified" href="index.php?type=advanced&action=prestation"><span>Prestations</span></a></li>
+            <li><a class="linkModified" href="index.php?type=static&action=contact"><span>Contact</span></a></li>
         </ul>
     </div>
 
@@ -23,9 +23,9 @@
 <div class="navbar">
     <a href="index.php"><div class="logo"></div></a>
     <div class="links">
-        <a class="link" href="index.php?type=barber&action=realisation">Réalisations</a>
-        <a class="link" href="index.php?type=barber&action=prestation">Prestations</a>
-        <a class="link" href="index.php?type=barber&action=contact">Contact</a>
+        <a class="link" href="index.php?type=advanced&action=realisation">Réalisations</a>
+        <a class="link" href="index.php?type=advanced&action=prestation">Prestations</a>
+        <a class="link" href="index.php?type=static&action=contact">Contact</a>
     </div>
     <a class="logoInvisible" href="index.php"><div class="logo"></div></a>
 </div>
@@ -72,7 +72,7 @@
         <div class="backgroundTotal"></div>
         <div><h4  class="textTotal">La Totale</h4></div>
       </div>
-      <a style="text-decoration: none;" href=""><div class="boutonPrestation">GO</div></a>
+      <a style="text-decoration: none;" href="index.php?type=advanced&action=prestation"><div class="boutonPrestation">GO</div></a>
     </div>
   </div>
 </div>
@@ -82,7 +82,7 @@
   <div class="backgroundContact">
     <div><h4 class="textContact">Enchanté, quel est votre nom?</h4></div>
     <div>
-        <form action="index.php?type=barber&action=contact" method="post">
+        <form action="index.php?type=static&action=contact" method="post">
         <h5  class="form">
       <label for="nom"></label>
       <input type="text" name="nom" id="nom" class="nom" placeholder="Nom" required>
@@ -101,7 +101,7 @@
     <div class="carte"></div>
     <div class="textInfo">
         <h3>Venez nous rencontrer au salon, dans un cadre amical et professionnel, pour redonner de la vie à vos cheveux </h3>
-        <h4>Situé à Oyonnax, TisBarbier est la destination à choisir pour s'occuper de votre chevelure grâce à l'expérience de notre barbier ainsi que les produits de la marque "System Professional"</h4>
+        <h3>Situé à Oyonnax, TisBarbier est la destination à choisir pour s'occuper de votre chevelure grâce à l'expérience de notre barbier ainsi que les produits de la marque "System Professional"</h3>
 
     </div>
 </div>

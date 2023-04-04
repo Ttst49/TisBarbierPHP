@@ -11,6 +11,9 @@ class PDOMySQL
      * Shortcut to database
      */
 
+    public static $currentPdo = null;
+
+
     public static function getPdo():\PDO
     {
 
@@ -20,17 +23,22 @@ class PDOMySQL
         $password = "!VFVutfCR98SCWI7";
 
 
+        if(self::$currentPdo === null){
 
-        $pdo = new \PDO("mysql:host=$adresseServeurMySQL;dbname=$nomDeDatabase",
-            $username,
-            $password,
-            [
-                \PDO::ATTR_ERRMODE => \PDO::ERRMODE_EXCEPTION,
-                \PDO::ATTR_DEFAULT_FETCH_MODE => \PDO::FETCH_OBJ
-            ]
-        );
+            self::$currentPdo = new \PDO("mysql:host=$adresseServeurMySQL;dbname=$nomDeDatabase",
+                $username,
+                $password,
+                [
+                    \PDO::ATTR_ERRMODE => \PDO::ERRMODE_EXCEPTION,
+                    \PDO::ATTR_DEFAULT_FETCH_MODE => \PDO::FETCH_OBJ
+                ]
+            );
+        }
 
-        return $pdo;
+
+
+
+        return self::$currentPdo;
     }
 
 
