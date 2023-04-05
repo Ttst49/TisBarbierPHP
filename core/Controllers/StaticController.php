@@ -29,8 +29,8 @@ class StaticController extends AbstractController
         if ($nom && $mail && $message){
 
 
-
-            /**$url = 'http://formsubmit.co/thibautstachnick@gmail.com';
+        /**
+            $url = 'http://formsubmit.co/thibautstachnick@gmail.com';
             $data = array('nom' => $nom, 'mail' => $mail, "message"=>$message);
 
             $options = array(
@@ -44,10 +44,15 @@ class StaticController extends AbstractController
             $result = file_get_contents($url, false, $context);
 
             var_dump($result);
-             *
+         **/
+
+
+
+            /**
+             * curl -H "Content-Type: application/json" -X POST -d '{"name":"bobby","mail":"habibi@bo.com","message":"coucou"}' http://formsubmit.co/thibautstachnick@gmail.com
              **/
 
-
+            /**
             $formData= array(
                 "nom"=>$nom,
                 "mail"=>$mail,
@@ -64,7 +69,21 @@ class StaticController extends AbstractController
             curl_exec($curl);
             curl_close($curl);
             var_dump($curl);
+            **/
 
+            $url = 'https://formsubmit.co/thibautstachnick@gmail.com';
+            $data = array("name" => "$nom","email"=>"$mail","message"=>"$message" );
+
+            $postdata = json_encode($data);
+
+            $ch = curl_init($url);
+            curl_setopt($ch, CURLOPT_POST, 1);
+            curl_setopt($ch, CURLOPT_POSTFIELDS, $postdata);
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+            curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
+            $result = curl_exec($ch);
+            curl_close($ch);
+            print_r ($result);
         }
 
 

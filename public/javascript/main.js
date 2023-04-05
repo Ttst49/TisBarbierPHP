@@ -1,7 +1,4 @@
 const menu = document.querySelector(".backgroundMenu")
-const contactModal = document.querySelector(".backgroundContact")
-
-
 
 
 /**
@@ -28,11 +25,8 @@ function closeNav() {
 }
 /**
  *
- * Modal Contact integration
+ * Map integration
  */
-contactModal.addEventListener("click",()=>{
-    contactModal.classList.add("fullscreen")
-})
 
 
 function initialize() {
