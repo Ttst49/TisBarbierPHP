@@ -1,0 +1,47 @@
+body{
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(34,34,73,1) 27%, rgba(93,24,129,1) 54%, rgba(56,72,150,1) 85%);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.error{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    padding-top: 20vh;
+}
+
+.number{
+    font-size: 15vh;
+    font-family: 'Playball', serif;
+    font-weight: bolder;
+    color: white;
+    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-width: 3px;
+}
+
+.text404{
+    color: white;
+    text-align: center;
+}
+
+.button404{
+    width: 25vh;
+    height: 15vh;
+    border-radius: 25px;
+    border: none;
+    font-family: 'Gloock', serif;
+    font-size: 2vh;
+    transition: .5s ease-in-out border-radius;
+}
+
+.button404:hover{
+    border-radius: 50px;
+}
+
+.footer, .navbar, .banner{
+    display: none;
+}

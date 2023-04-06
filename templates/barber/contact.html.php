@@ -32,7 +32,8 @@
     <div class="leftContact">
         <?php if (!$nom && !$mail): ?>
         <h1>Nous contacter</h1>
-        <form action="index.php?type=static&action=contact" method="post">
+        <form onsubmit="submitMails(nom,mail,message)" method="post">
+            <input type="hidden" name="_url" value="https://lockedup.ga/index.php?type=static&action=contact">
             <input type="hidden" name="_template" value="table">
             <label for="name">Votre nom?</label> <br>
             <input type="text" name="nom" id="nom" required> <br>
@@ -44,8 +45,9 @@
         </form>
         <?php else: ?>
             <h1>Nous contacter</h1>
-            <form action="index.php?type=static&action=contact&nom=<?= $nom ?>&mail=<?= $mail?>" method="post">
-            <input type="hidden" name="_template" value="table">
+            <form onsubmit="submitMails(nom,mail,message)" method="post">
+                <input type="hidden" name="_url" value="https://lockedup.ga/index.php?type=static&action=contact">
+                <input type="hidden" name="_template" value="table">
             <label for="name">Votre nom?</label> <br>
             <input type="text" name="nom" id="nom" value="<?= $nom ?>" required><br>
             <label for="mail">Votre email?</label> <br>

@@ -22,13 +22,11 @@ class AdvancedController extends AbstractController
 
     public function realisation()
     {
-
         return $this->render("barber/realisations", ["images"=>$this->repository->findAll(),"pageTitle"=>"TisBarbier | Réalisations Barbier/coiffeur","css"=>"realisations"]);
     }
 
-    public function prestation(){
-
-
+    public function prestation()
+    {
         return $this->render("barber/prestations",["offres"=>$this->getRepository(entityName: Offre::class)->findAll(),"pageTitle"=>"TisBarbier | Prestations Barbier/coiffeur","css"=>"prestations"]);
     }
 

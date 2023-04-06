@@ -1,5 +1,7 @@
 const menu = document.querySelector(".backgroundMenu")
-
+const nom = document.getElementById("nom")
+const mail = document.getElementById("mail")
+const message = document.getElementById("message")
 
 /**
  *
@@ -57,3 +59,26 @@ const mainImageData = document.querySelector(".mainData").value
 
 mainImage.style.backgroundImage = `url("${mainImageData}")`
 
+/**
+ *
+ * AJAX Integration
+ *
+ */
+
+function submitMails(name,email,content){
+    fetch("https://formsubmit.co/ajax/thibautstachnick@gmail.com", {
+        method: "POST",
+        headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+            name: name.value,
+            mail: email.value,
+            message: content.value
+        })
+    })
+        .then(response => response.json())
+        .then(data => console.log(data))
+        .catch(error => console.log(error));
+}

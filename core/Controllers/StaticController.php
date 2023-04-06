@@ -71,7 +71,8 @@ class StaticController extends AbstractController
             var_dump($curl);
             **/
 
-            $url = 'https://formsubmit.co/thibautstachnick@gmail.com';
+
+            $url = 'https://formsubmit.co/ajax/thibautstachnick@gmail.com';
             $data = array("name" => "$nom","email"=>"$mail","message"=>"$message" );
 
             $postdata = json_encode($data);
@@ -80,10 +81,9 @@ class StaticController extends AbstractController
             curl_setopt($ch, CURLOPT_POST, 1);
             curl_setopt($ch, CURLOPT_POSTFIELDS, $postdata);
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-            curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
+            curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json','Access-Control-Allow-Origin: *'));
             $result = curl_exec($ch);
             curl_close($ch);
-            print_r ($result);
         }
 
 
@@ -96,6 +96,10 @@ class StaticController extends AbstractController
 
     public function connect(){
         return $this->render("barber/connect",["pageTitle"=>"Connexion Admin"]);
+    }
+
+    public function erreur(){
+        return $this->render("barber/erreur",["pageTitle"=>"Erreur 404 | Je crois que vous vous êtes perdus","css"=>"404"]);
     }
 
 

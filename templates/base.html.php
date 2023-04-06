@@ -2,7 +2,8 @@
 <html lang="fr">
 
 <head>
-    <meta name="referrer" content="no-referrer" >
+    <?php header("Access-Control-Allow-Origin: *"); ?>
+    <meta name="referrer" content="origin-when-cross-origin">
     <meta name="description" content="Bienvenue chez TisBarbier | découvrez ce que nous avons à offrir à vos cheveux dans le secteur d'Oyonnax et ses alentours">
     <meta name="keywords" content="Barbier, Coiffeur, Oyonnax, Cheveux, salon de coiffure, barber, barbershop">
     <meta charset="UTF-8">
@@ -64,6 +65,6 @@
 <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
         integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
         crossorigin=""></script>
-<script src="../public/javascript/main.js"></script>
+<script src="../public/main.js"></script>
 
 </html>
