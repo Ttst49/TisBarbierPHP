@@ -12,7 +12,7 @@
     <a href="#" id="openBtn">
   <span class="burger-icon">
     <span class="backgroundMenu">
-      <img class="menu" src="./image/menu.svg" alt="menu burger">
+      <img class="menu" src="../../public/image/menu.svg" alt="menu burger">
     </span>
   </span>
     </a>
@@ -31,7 +31,7 @@
 
 <div class="prestationsCards">
     <div class="cartePrestation">
-        <div class="title">Barbe <img class="icon" src="./image/beard.png" alt="logo barbe"></div>
+        <div class="title">Barbe <img class="icon" src="../../public/image/beard.png" alt="logo barbe"></div>
         <div class="presentationText">
             <span>-nouvelle barbe, nouveau départ</span>
             <br>
@@ -46,7 +46,7 @@
         </div>
     </div>
     <div class="cartePrestation">
-        <div class="title">Cheveux <img class="icon" src="./image/hair.png" alt="Logo cheveux"></div>
+        <div class="title">Cheveux <img class="icon" src="../../public/image/hair.png" alt="Logo cheveux"></div>
         <div class="presentationText">
             <span>-nouvelle coupe, nouveau look</span>
             <br>
@@ -59,7 +59,7 @@
         </div>
     </div>
     <div class="cartePrestation premium">
-        <div class="title premiumTitle">La totale <img class="icon" src="./image/laTotale.png" alt="logo La Totale"></div>
+        <div class="title premiumTitle">La totale <img class="icon" src="../../public/image/laTotale.png" alt="logo La Totale"></div>
         <div class="presentationText premiumText">
             <span>nouvelle coupe, <br> nouvelle barbe, <br> Nouvel homme</span>
             <br> <div class="dot"></div>

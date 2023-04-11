@@ -52,8 +52,8 @@
     </div>
     <div class="rightFooter">
         <div class="socials">
-            <h5>Suivez-nous sur nos réseaux <br> <a target="_blank" href="https://instagram.com/tisbarbier"><img class="instagram" src="image/instagram.svg" alt="Instagram Logo"></a>
-                <a target="_blank" href="https://www.facebook.com/people/TisBarbier/100084037249214/"><img class="facebook" src="image/facebook.svg" alt="facebook logo"></a></h5>
+            <h5>Suivez-nous sur nos réseaux <br> <a target="_blank" href="https://instagram.com/tisbarbier"><img class="instagram" src="../public/image/instagram.svg" alt="Instagram Logo"></a>
+                <a target="_blank" href="https://www.facebook.com/people/TisBarbier/100084037249214/"><img class="facebook" src="../public/image/facebook.svg" alt="facebook logo"></a></h5>
         </div>
     </div>
 </footer>

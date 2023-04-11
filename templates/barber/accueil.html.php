@@ -14,7 +14,7 @@
     <a href="#" id="openBtn">
   <span class="burger-icon">
     <span class="backgroundMenu">
-      <img class="menu" src="./image/menu.svg" alt="menu burger">
+      <img class="menu" src="../../public/image/menu.svg" alt="menu burger">
     </span>
   </span>
     </a>
