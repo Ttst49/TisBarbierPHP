@@ -27,7 +27,7 @@
 <body onload="initialize()" >
 <div class="banner">
     <p class="content">
-        <a class="nameOnBanner" href="../index.php"><span>TisBarbier</span></a>
+        <a class="nameOnBanner" href="index.php"><span>TisBarbier</span></a>
     </p>
 </div>
 
@@ -40,9 +40,9 @@
     <div class="leftFooter">
         <div class="logoFooter"></div>
         <div class="linksFooter">
-            <div><h5><a class="linkFooter" href="../index.php?type=static&action=contact">Nous contacter</a></h5></div>
-            <div><h5><a class="linkFooter" href="../index.php?type=advanced&action=prestation">Nos prestations</a></h5></div>
-            <div><h5><a class="linkFooter" href="../index.php?type=static&action=mentions">Lire nos mentions légales</a></h5></div>
+            <div><h5><a class="linkFooter" href="index.php?type=static&action=contact">Nous contacter</a></h5></div>
+            <div><h5><a class="linkFooter" href="index.php?type=advanced&action=prestation">Nos prestations</a></h5></div>
+            <div><h5><a class="linkFooter" href="index.php?type=static&action=mentions">Lire nos mentions légales</a></h5></div>
         </div>
     </div>
     <div class="middleFooter">

@@ -62,7 +62,7 @@ class UserController extends AbstractController
 
             if (!$user){
                 $this->redirect([
-                    "type"=>"barber",
+                    "type"=>"static",
                     "action"=>"connect",
                     "info"=>"Identifiant incorrect"
                 ]);
@@ -79,7 +79,7 @@ class UserController extends AbstractController
             }
 
             return $this->redirect([
-                "type"=>"barber",
+                "type"=>"static",
                 "action"=>"connect",
                 "info"=>"erreur mot de passe"
             ]);
@@ -100,7 +100,7 @@ class UserController extends AbstractController
             $user->logOut();
         }
         return $this->redirect([
-            "type"=>"barber",
+            "type"=>"advanced",
             "action"=>"index"
         ]);
     }

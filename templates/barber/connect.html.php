@@ -1,4 +1,4 @@
-<form action="../../index.php?type=user&action=signIn" method="post" class="form-control">
+<form action="index.php?type=user&action=signIn" method="post" class="form-control">
 
     <label for="username">Username</label> <br>
     <input type="text" name="username" id="username" required> <br>

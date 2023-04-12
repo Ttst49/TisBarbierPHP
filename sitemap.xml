@@ -16,22 +16,22 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://lockedup.ga/index.php?type=barber&amp;action=realisation</loc>
+  <loc>https://lockedup.ga/index.php?type=advanced&amp;action=realisation</loc>
   <lastmod>2023-04-03T08:39:35+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://lockedup.ga/index.php?type=barber&amp;action=prestation</loc>
+  <loc>https://lockedup.ga/index.php?type=advanced&amp;action=prestation</loc>
   <lastmod>2023-04-03T08:39:35+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://lockedup.ga/index.php?type=barber&amp;action=contact</loc>
+  <loc>https://lockedup.ga/index.php?type=static&amp;action=contact</loc>
   <lastmod>2023-04-03T08:39:35+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://lockedup.ga/index.php?type=barber&amp;action=mentions</loc>
+  <loc>https://lockedup.ga/index.php?type=static&amp;action=mentions</loc>
   <lastmod>2023-04-03T08:39:35+00:00</lastmod>
   <priority>0.80</priority>
 </url>

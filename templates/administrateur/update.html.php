@@ -1,6 +1,6 @@
 <div class="post mt-3">
 
-    <a style="position:absolute; left: 30px;" href="../../index.php?type=images&action=index" class="btn btn-outline-success">retour</a>
+    <a style="position:absolute; left: 30px;" href="index.php?type=images&action=index" class="btn btn-outline-success">retour</a>
 
     <?php if ($image): ?>
 
@@ -8,7 +8,7 @@
         <img src="image/<?= $image->getImage() ?>" width="1000" height="750">
     </div>
 
-    <form style="background-color: white" class="form" enctype="multipart/form-data" action="../../index.php?type=images&action=update&id=<?= $image->getId() ?>" method="post">
+    <form style="background-color: white" class="form" enctype="multipart/form-data" action="index.php?type=images&action=update&id=<?= $image->getId() ?>" method="post">
         <label for="image">nouvelle image</label>
         <input type="file" name="image" id="image">
         <input type="hidden" name="idUpdate" id="idUpdate" value="<?= $image->getId() ?>">
@@ -26,7 +26,7 @@
             <h2><p><?= $offre->getPrice() ?>€</p></h2>
         </div>
 
-        <form style="background-color: white" class="form" enctype="multipart/form-data" action="../../index.php?type=offre&action=update&id=<?= $offre->getId() ?>" method="post">
+        <form style="background-color: white" class="form" enctype="multipart/form-data" action="index.php?type=offre&action=update&id=<?= $offre->getId() ?>" method="post">
             <label for="price">nouveau prix</label>
             <input type="number" name="price" id="price">
             <input type="hidden" name="idUpdate" id="idUpdate" value="<?= $offre->getId() ?>">
