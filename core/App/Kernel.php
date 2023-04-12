@@ -11,8 +11,8 @@ class Kernel
 
         Session::start();
 
-        $type = "advanced";
-        $action = "index";
+        $type = "barber";
+        $action = "connect";
 
 
 
