@@ -24,7 +24,7 @@ class File
     public function __construct($index)
     {
         //Manage the directory where files are taken
-        $this->uploadDirectory = dirname(__DIR__, 2) . "public/image/";
+        $this->uploadDirectory = dirname(__DIR__, 3) . "/tisBarbier/public/image/";
 
         //Manage the file itself and get it information
         $this->fileData = $_FILES[$index];
