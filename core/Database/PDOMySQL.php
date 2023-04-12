@@ -18,9 +18,9 @@ class PDOMySQL
     {
 
         $adresseServeurMySQL = "localhost";
-        $nomDeDatabase = "barber";
-        $username = "adminTorres";
-        $password = "!VFVutfCR98SCWI7";
+        $nomDeDatabase = "";
+        $username = "";
+        $password = "";
 
 
         if(self::$currentPdo === null){
