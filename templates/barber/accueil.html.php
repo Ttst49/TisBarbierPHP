@@ -5,9 +5,9 @@
         <a id="closeBtn" href="#" class="close">×</a>
         <ul>
             <li><a class="linkModified" href="#"><span class="gris">Accueil</span></a></li>
-            <li><a class="linkModified" href="index.php?type=advanced&action=realisation"><span>Réalisations</span></a></li>
-            <li><a class="linkModified" href="index.php?type=advanced&action=prestation"><span>Prestations</span></a></li>
-            <li><a class="linkModified" href="index.php?type=static&action=contact"><span>Contact</span></a></li>
+            <li><a class="linkModified" href="../../index.php?type=advanced&action=realisation"><span>Réalisations</span></a></li>
+            <li><a class="linkModified" href="../../index.php?type=advanced&action=prestation"><span>Prestations</span></a></li>
+            <li><a class="linkModified" href="../../index.php?type=static&action=contact"><span>Contact</span></a></li>
         </ul>
     </div>
 
@@ -21,13 +21,13 @@
 </div>
 
 <div class="navbar">
-    <a href="index.php"><div class="logo"></div></a>
+    <a href="../../index.php"><div class="logo"></div></a>
     <div class="links">
-        <a class="link" href="index.php?type=advanced&action=realisation">Réalisations</a>
-        <a class="link" href="index.php?type=advanced&action=prestation">Prestations</a>
-        <a class="link" href="index.php?type=static&action=contact">Contact</a>
+        <a class="link" href="../../index.php?type=advanced&action=realisation">Réalisations</a>
+        <a class="link" href="../../index.php?type=advanced&action=prestation">Prestations</a>
+        <a class="link" href="../../index.php?type=static&action=contact">Contact</a>
     </div>
-    <a class="logoInvisible" href="index.php"><div class="logo"></div></a>
+    <a class="logoInvisible" href="../../index.php"><div class="logo"></div></a>
 </div>
 
 <div class="main filter">
@@ -72,7 +72,7 @@
         <div class="backgroundTotal"></div>
         <div><h4  class="textTotal">La Totale</h4></div>
       </div>
-      <a style="text-decoration: none;" href="index.php?type=advanced&action=prestation"><div class="boutonPrestation">GO</div></a>
+      <a style="text-decoration: none;" href="../../index.php?type=advanced&action=prestation"><div class="boutonPrestation">GO</div></a>
     </div>
   </div>
 </div>
@@ -82,7 +82,7 @@
   <div class="backgroundContact">
     <div><h4 class="textContact">Enchanté, quel est votre nom?</h4></div>
     <div>
-        <form action="index.php?type=static&action=contact" method="post">
+        <form action="../../index.php?type=static&action=contact" method="post">
         <h5  class="form">
       <label for="nom"></label>
       <input type="text" name="nom" id="nom" class="nom" placeholder="Nom" required>
