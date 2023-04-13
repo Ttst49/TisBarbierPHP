@@ -11,7 +11,7 @@ class Kernel
 
         Session::start();
 
-        $type = "barber";
+        $type = "static";
         $action = "connect";
 
 
